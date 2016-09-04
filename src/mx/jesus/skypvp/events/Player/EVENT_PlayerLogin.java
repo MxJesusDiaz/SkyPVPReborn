@@ -23,7 +23,8 @@ public class EVENT_PlayerLogin implements Listener {
 	    e.setJoinMessage(null);
         Player p = e.getPlayer();
 
-        p.sendMessage(ChatColor.DARK_GREEN.toString() + "Hola Jesus que tal la llevas");
+        p.sendMessage(ChatColor.DARK_GREEN.toString() + "Doxel es un tipo muu majo!");
     }
-	
+
+
 }
