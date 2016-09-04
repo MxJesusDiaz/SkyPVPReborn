@@ -1,0 +1,9 @@
+name: SkyPvP-Reborn
+version: 1.0
+author: MxJesusDiaz
+main: mx.jesus.skypvp.Main
+commands:
+  op:
+    aliases: [operator]
+  deop:
+    aliases: [deoperator]
