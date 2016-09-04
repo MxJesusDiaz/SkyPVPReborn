@@ -9,6 +9,8 @@ import org.bukkit.event.player.PlayerLoginEvent;
 import org.bukkit.event.player.PlayerLoginEvent.Result;
 
 import mx.jesus.skypvp.utils.Strings;
+import org.bukkit.event.player.PlayerQuitEvent;
+
 public class EVENT_PlayerLogin implements Listener {
 
 	
@@ -26,5 +28,10 @@ public class EVENT_PlayerLogin implements Listener {
         p.sendMessage(ChatColor.DARK_GREEN.toString() + "Doxel es un tipo muu majo!");
     }
 
+	public void OnPlayerQuit(PlayerQuitEvent e){
+		Player p = e.getPlayer();
+
+		p.getInventory().setArmorContents(null);
+	}
 
 }
